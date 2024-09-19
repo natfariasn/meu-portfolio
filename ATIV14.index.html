@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS personalizado -->
+</head>
+<body>
+
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <section id="sobre" class="mb-4">
+            <h2>Sobre Mim</h2>
+            <p>Sou uma estudante de Análise e Desenvolvimento de sistemas caminhando para virar uma desenvolvedora web. </p>
+        </section>
+
+        <section id="projetos" class="mb-4">
+            <h2>Meus Projetos</h2>
+            <p>Um espaço onde ficarão futuramente alguns dos projetos que irei desenvolver.</p>
+        </section>
+
+        <section id="contato" class="mb-4">
+            <h2>Contato</h2>
+            <p>Você pode me contatar pelo e-mail: naat.sales07@gmail.com </p>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; <span id="ano"></span> Meu Portfólio</p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
